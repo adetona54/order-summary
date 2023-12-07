@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.2rem;
+}
+
+.summary {
+  padding: 2rem;
+  border-radius: 0.9rem;
+}
+
+.hero {
+  width: 38rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+.main-text {
+  margin-top: 1.4rem;
+  color: hsl(224, 23%, 55%);
+  width: 32rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.plan-text {
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-cta {
+  font-size: 1.6rem;
+  display: inline;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  transform: all 0.3s;
+}
+
+.plan-cta:hover,
+.plan-cta:active {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 8rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  box-shadow: 8px 8px 8px 2px hsla(224, 23%, 55%, 0.411);
+  margin-bottom: 0.8rem;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  background-color: hsl(245, 83%, 68%);
+}
+
+.cancel,
+.cancel:link,
+.cancel:visited {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.cancel:hover,
+.cancel:active {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(223, 47%, 23%);
+}
+
+.cta {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    width: auto;
+    padding: auto;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .cancel,
+  .cancel:link,
+  .cancel:visited {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .cancel:hover,
+  .cancel:active {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    width: 90vw;
+  }
+
+  .main-text {
+    width: auto;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 1.8rem;
+  }
+
+  .cancel,
+  .cancel:link,
+  .cancel:visited {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .cancel:hover,
+  .cancel:active {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+  }
+}
